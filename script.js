@@ -72,4 +72,39 @@ inputGrup.forEach(input =>{
         childrenx[0].style.borderRadius = '10px'
     }
 });
+
+// DROPDOWN İÇİN
+
+const dropdownButtons = document.querySelectorAll('.dropdown-toggle');
+dropdownButtons.forEach((dropdownButton) => {
+  const dropdownContainer = dropdownButton.parentNode;
+  const dropdownListContainer = dropdownContainer.querySelector('.dropdown-menu');
+  const arrowIcon = dropdownContainer.querySelector('.dropdown-arrowicon svg path');
+  const menuLinks = dropdownContainer.querySelectorAll('.dropdown-menu a');
+  const button = dropdownContainer.querySelector('.btn');
+
+  dropdownButton.addEventListener('click', function() {
+    dropdownContainer.classList.toggle('open');
+  });
+
+  document.addEventListener('click', function(event) {
+    if (!dropdownContainer.contains(event.target)) {
+      dropdownContainer.classList.remove('open');
+    }
+  });
+
+
+  dropdownListContainer.style.backgroundColor = getComputedStyle(button).backgroundColor;
+
+  arrowIcon.setAttribute('fill', arrowIcon.getAttribute('fill'));
+
+  menuLinks.forEach(link => {
+    link.style.color = arrowIcon.getAttribute('fill');
+  });
+});
+
+
+
+
+  
     
