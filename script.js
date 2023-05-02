@@ -81,7 +81,7 @@ dropdownButtons.forEach((dropdownButton) => {
   const dropdownListContainer = dropdownContainer.querySelector('.dropdown-menu');
   const arrowIcon = dropdownContainer.querySelector('.dropdown-arrowicon svg path');
   const menuLinks = dropdownContainer.querySelectorAll('.dropdown-menu a');
-  const button = dropdownContainer.querySelector('.btn');
+ 
 
   dropdownButton.addEventListener('click', function() {
     dropdownContainer.classList.toggle('open');
@@ -94,9 +94,9 @@ dropdownButtons.forEach((dropdownButton) => {
   });
 
 
-  dropdownListContainer.style.backgroundColor = getComputedStyle(button).backgroundColor;
+  dropdownListContainer.style.backgroundColor = getComputedStyle(dropdownButton).backgroundColor;
 
-  arrowIcon.setAttribute('fill', arrowIcon.getAttribute('fill'));
+  
 
   menuLinks.forEach(link => {
     link.style.color = arrowIcon.getAttribute('fill');
