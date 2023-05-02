@@ -103,6 +103,30 @@ dropdownButtons.forEach((dropdownButton) => {
   });
 });
 
+// SELECT İÇİN
+
+const selectGroup = document.querySelectorAll('.select-group');
+const formDetails = document.querySelectorAll('.form-details');
+
+selectGroup.forEach(group => {
+  const childrenx = [...group.children];
+  
+  if (childrenx.length >= 2) {
+    childrenx[0].style.borderRadius = '10px 0px 0px 10px';
+    childrenx[childrenx.length - 1].style.borderRadius = '0px 10px 10px 0px';
+  } else {
+    childrenx[0].style.borderRadius = '10px';
+  }
+  
+  const select = group.querySelector('select');
+  const button = group.querySelector('button');
+  
+  
+  
+  formDetails.forEach(form => {
+    form.style.width = '100%';
+  });
+});
 
 
 
