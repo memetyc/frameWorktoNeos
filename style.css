@@ -1485,6 +1485,43 @@ background-color: var(--neosblue);
 .btn.btn-hover-3:hover::before {
     transform: scaleY(1);
 }
+/*-----------------------CHECKBOX---------------------- */
+.toggle-pill-bw input[type="checkbox"] {
+    display: none;
+  }
+  .toggle-pill-bw input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    width: 5rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+    background: var(--gray);
+    border-radius: 1em;
+    cursor: pointer;
+    -webkit-transition:  0.1s ease-in-out;
+    transition:  0.1s ease-in-out;
+  }
+  .toggle-pill-bw input[type="checkbox"] + label:before {
+    content: "";
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 1rem;
+    background: var(--white);
+    position: absolute;
+    left: 0.4rem;
+    top: 0.3rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .toggle-pill-bw input[type="checkbox"]:checked + label {
+    background:var(--neosblue);
+  }
+  .toggle-pill-bw input[type="checkbox"]:checked + label:before {
+    left: 3.3rem;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
 
    
     
