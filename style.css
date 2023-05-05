@@ -77,49 +77,49 @@ font-weight: 700;
 
 /* Width */
 .w-0{
-    width: 0%;
+    width: 0% !important;
 }
 .w-20{
-    width: 20%;
+    width: 20% !important;
 }
 .w-40{
-    width: 40%;
+    width: 40% !important;
 }
 .w-50{
-    width: 50%;
+    width: 50% !important;
 }
 .w-60{
-    width: 60%;
+    width: 60% !important;
 }
 .w-80{
-    width: 80%;
+    width: 80% !important;
 }
 .w-100{
-    width: 100%;
+    width: 100% !important;
 }
 
 /* Height */
 .h-0{
-    height: 0%;
+    height: 0% !important;
 }
 .h-20{
-    height: 20%;
+    height: 20% !important;
 }
 .h-40{
-    height: 40%;
+    height: 40% !important;
 }
 
 .h-50{
-    height: 50%;
+    height: 50% !important;
 }
 .h-60{
-    height: 60%;
+    height: 60% !important;
 }
 .h-80{
-    height: 80%;
+    height: 80% !important;
 }
 .h-100{
-    height: 100%;
+    height: 100% !important;
 }
 
 
