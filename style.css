@@ -1198,6 +1198,9 @@
   .rounded{
       border-radius: 0.25rem;
   }
+  .rounded-none{
+    border-radius: 0rem;
+  }
   .rounded-top {
       border-top-left-radius: 0.25rem;
       border-top-right-radius: 0.25rem;
