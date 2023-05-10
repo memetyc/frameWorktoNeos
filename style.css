@@ -2031,7 +2031,7 @@
       
           /* SELECT ÖZELLİK*/
   
-      /* .select-group {
+      .select-group {
           display: flex;
           align-items: stretch;
           width: 100%;
@@ -2066,7 +2066,7 @@
           white-space: nowrap;
           background-color: var(--white);
           border: 0.1rem solid var(--gray);
-        } */
+        } 
       /* DİSPLAY ÖZELLİKLERİ */
   .d-flex{
       display: flex;
