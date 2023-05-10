@@ -65,12 +65,20 @@ inputGrup.forEach(input =>{
             })
         }
     })
-if (childrenx.length >= 2) { 
+    if (childrenx.length >= 2) { 
         childrenx[0].style.borderRadius = '10px 0px 0px 10px';
+        childrenx[1].style.borderRadius = '0px'
+        if(childrenx[2]){
+          childrenx[2].style.borderRadius='0px'
+        }
+        if(childrenx[3]){
+          childrenx[3].style.borderRadius='0px'
+        }
         childrenx[childrenx.length-1].style.borderRadius = '0px 10px 10px 0px'
+        
     }else{
         childrenx[0].style.borderRadius = '10px'
-    }
+    }
 });
 
 // DROPDOWN İÇİN
