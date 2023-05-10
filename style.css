@@ -2516,7 +2516,7 @@
     
    
    
-      .slider-container{
+      .slider-contain{
         padding: 2rem;
 
     }
@@ -2560,7 +2560,135 @@
         opacity: 0.5;
     }
   
+   /* --- CAROUSEL --- */
   
+     .carousel-center {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+      }
+      
+      .carousel-wrapper {
+        display: flex;
+        gap: 1em;
+        overflow: hidden;
+        width: 55em;
+      }
+      
+      .carousel-wrapper > .inner {
+        display: flex;
+        gap: 1em;
+        transition: all 1s ease-in-out;
+      }
+      
+      .carousel-item {
+        border-radius: 0.5em;
+        box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.5);
+      }
+      
+      .carousel-item > img {
+          border-radius: 0.5em;
+        display: block;
+        width: 17.5em;
+      }
+      .map {
+          text-align: center;
+        margin-top: 2em;
+      }
+      
+      .map > button {
+        all: unset;
+        background:var(--gray);
+        cursor: pointer;
+        margin: 0 0.125em;
+        position: relative;
+        user-select: none;
+        border-radius: 100%;
+        height: 1em;
+        width: 1em;
+      }
+      
+      .map > button.caros:after {
+        background: var(--black);
+        content: "";
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        border-radius: 100%;
+        height: 0.5em;
+        width: 0.5em;
+      }
+
+
+      /* ---- CAROUSEL2 ---- */
+
+
+      .gallery {
+        margin-left: 20rem;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(10, 60vw);
+        grid-template-rows: 1fr;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        overflow-x: scroll;
+        height: 40vh;
+        width: 150vh;
+        scroll-snap-type: both mandatory;
+        scroll-padding: 1rem;
+    }
+    .gallery::-webkit-scrollbar{
+        background: var(--white);
+        height: 0.5rem;
+      }
+      .gallery::-webkit-scrollbar-thumb{
+        background: var(--gray);
+        border-radius: 1.2rem;
+        
+      }
+    .activite {
+        scroll-snap-type: unset;
+    }
+    
+    li {
+        scroll-snap-align: center;
+        display: inline-block;
+        border-radius: 0.3rem;
+        font-size: 0;
+    }
+    .scroll-1{
+        background-color: var(--black);
+    }
+    .scroll-2{
+        background-color: var(--neosblue);
+    }
+    .scroll-3{
+        background-color: var(--hot);
+    }
+    .scroll-4{
+        background-color: var(--gray);
+    }
+    .scroll-5{
+        background-color: var(--green);
+    }
+    .scroll-6{
+        background-color: var(--softorange);
+    }
+    .scroll-7{
+        background-color: var(--yellow);
+    }
+    .scroll-8{
+        background: var(--lin-gray);
+    }
+    .scroll-9{
+        background: var(--lin-neosblue);
+    }
+    
+
+   
      
   
 
