@@ -137,6 +137,58 @@ selectGroup.forEach(group => {
 });
 
 
+// ----- CAROUSEL -----
+
+const buttonsWrapper = document.querySelector(".map");
+const slides = document.querySelector(".inner");
+
+buttonsWrapper.addEventListener("click", e => {
+  if (e.target.nodeName === "BUTTON") {
+    Array.from(buttonsWrapper.children).forEach(item =>
+      item.classList.remove("caros")
+    );
+    if (e.target.classList.contains("firstes")) {
+      slides.style.transform = "translateX(-0%)";
+      e.target.classList.add("caros");
+    } else if (e.target.classList.contains("second")) {
+      slides.style.transform = "translateX(-33.33333333333333%)";
+      e.target.classList.add("caros");
+    } else if (e.target.classList.contains('third')){
+      slides.style.transform = 'translatex(-66.6666666667%)';
+      e.target.classList.add('caros');
+    }
+  }
+});
+
+
+// ----- CAROUSEL2 -----
+const slider = document.querySelector('.gallery');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', e => {
+  isDown = true;
+  slider.classList.add('activite');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', _ => {
+  isDown = false;
+  slider.classList.remove('activite');
+});
+slider.addEventListener('mouseup', _ => {
+  isDown = false;
+  slider.classList.remove('activite');
+});
+slider.addEventListener('mousemove', e => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const SCROLL_SPEED = 3;
+  const walk = (x - startX) * SCROLL_SPEED;
+  slider.scrollLeft = scrollLeft - walk;
+});
 
   
     
