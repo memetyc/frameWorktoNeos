@@ -2792,6 +2792,65 @@
        background: var(--gray);
      }
      
-  
+       /* ---- radio 2 ---- */
+
+     
+.box {
+    width: 30rem;
+    margin: 2.5rem 0;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.box label {
+    font-size: 2.6rem;
+    position: absolute;
+    z-index: 10;
+    padding-left: 5rem;
+    cursor: pointer;
+}
+
+.box input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.box input:checked ~ .check {
+    border-color: var(--green);
+    box-shadow: 0px 0px 0px 1.5rem var(--green) inset;
+}
+
+.box input:checked ~ .check::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.box .check {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10rem;
+    background-color:var(--white);
+    border: 0.2rem solid var(--green);
+    box-shadow: 0px 0px 0px 0px var(--green) inset;
+    transition: all 0.15s cubic-bezier(0, 1.05, 0.72, 1.07);
+}
+
+.box .check::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 4;
+    position: absolute;
+    transform: scale(0);
+    transition-delay: 0.2s !important;
+    transition: all 0.25s cubic-bezier(0, 1.05, 0.72, 1.07);
+}
 
    
