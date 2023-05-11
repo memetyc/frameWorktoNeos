@@ -889,6 +889,7 @@
   /* COLOR */
   /* spacer kullanımı yapmamızın sebebi; margin ve padding boşluklarımızda 10px olarak belirlenen spacer ile istediğimiz değeri çarpıcaz.Böylece bizlere istediğimiz boşluk değeri vermiş olacaktır. */
   :root {
+      --neos-neon: rgb(0, 253, 249);
       --spacer:1rem;
       --white:#ffffff;
       --black:#000000;
