@@ -2842,5 +2842,75 @@
     transition-delay: 0.2s !important;
     transition: all 0.25s cubic-bezier(0, 1.05, 0.72, 1.07);
 } */
+  /* BTN-HOVER-4 */
+.btn.btn-hover-4  {
+	font-size: 1.4rem;
+    font-family: 'Audiowide', cursive;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--white);
+	border: var(--neosblue) 4px solid;
+	padding: 0.25em 1em;
+	border-radius: 0.25em;
+	background-color: transparent;
+
+	text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.55), 0 0 0.5em currentColor;
+
+	box-shadow: inset 0 0 0.5em 0 var(--neosblue), 0 0 0.5em 0 var(--neosblue);
+
+	position: relative;
+}
+
+.btn.btn-hover-4::before {
+	pointer-events: none;
+	content: "";
+	position: absolute;
+	background: var(--neosblue);
+	top: 120%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: perspective(1.2em) rotateX(40deg) scale(1.5, 0.5);
+	filter: blur(1.15em);
+	opacity: 0.7;
+	transition: transform 0.5s linear;
+}
+
+.btn.btn-hover-4::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 0 4em 0.6em var(--neosblue), 0 0 1em 0.2em var(--white);
+	opacity: 0;
+	background: var(--neosblue);
+	z-index: -1;
+	transition: opacity 0.5s linear;
+    color: white;
+
+
+}
+
+.btn.btn-hover-4:hover,
+.btn.btn-hover-4:focus {
+	color: var(--white);
+	text-shadow: none;
+	background-color: var(--neosblue);
+}
+
+.btn.btn-hover-4:hover::before,
+.btn.btn-hover-4:focus::before {
+	opacity: 1;
+	transform: perspective(1em) rotateX(40deg) scale(1.5, 0.6);
+	transition: transform 0.5s linear;
+}
+
+.btn.btn-hover-4:hover::after,
+.btn.btn-hover-4:focus::after {
+	opacity: 1;
+}
 
    
