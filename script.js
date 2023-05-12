@@ -140,84 +140,85 @@ selectGroup.forEach(group => {
 
   // ----- CAROUSEL -----
 
-// const buttonsWrapper = document.querySelector(".map");
-// const slides = document.querySelector(".inner");
+const buttonsWrapper = document.querySelector(".map");
+const slides = document.querySelector(".inner");
 
-// buttonsWrapper.addEventListener("click", e => {
-//   if (e.target.nodeName === "BUTTON") {
-//     Array.from(buttonsWrapper.children).forEach(item =>
-//       item.classList.remove("caros")
-//     );
-//     if (e.target.classList.contains("firstes")) {
-//       slides.style.transform = "translateX(-0%)";
-//       e.target.classList.add("caros");
-//     } else if (e.target.classList.contains("second")) {
-//       slides.style.transform = "translateX(-33.33333333333333%)";
-//       e.target.classList.add("caros");
-//     } else if (e.target.classList.contains('third')){
-//       slides.style.transform = 'translatex(-66.6666666667%)';
-//       e.target.classList.add('caros');
-//     }
-//   }
-// });
+buttonsWrapper.addEventListener("click", e => {
+  if (e.target.nodeName === "BUTTON") {
+    Array.from(buttonsWrapper.children).forEach(item =>
+      item.classList.remove("caros")
+    );
+    if (e.target.classList.contains("firstes")) {
+      slides.style.transform = "translateX(-0%)";
+      e.target.classList.add("caros");
+    } else if (e.target.classList.contains("second")) {
+      slides.style.transform = "translateX(-33.33333333333333%)";
+      e.target.classList.add("caros");
+    } else if (e.target.classList.contains('third')){
+      slides.style.transform = 'translatex(-66.6666666667%)';
+      e.target.classList.add('caros');
+    }
+  }
+});
 
 
 // ----- CAROUSEL2 -----
-// const slider = document.querySelector('.gallery');
-// let isDown = false;
-// let startX;
-// let scrollLeft;
+const slider = document.querySelector('.gallery');
+let isDown = false;
+let startX;
+let scrollLeft;
 
-// slider.addEventListener('mousedown', e => {
-//   isDown = true;
-//   slider.classList.add('activite');
-//   startX = e.pageX - slider.offsetLeft;
-//   scrollLeft = slider.scrollLeft;
-// });
-// slider.addEventListener('mouseleave', _ => {
-//   isDown = false;
-//   slider.classList.remove('activite');
-// });
-// slider.addEventListener('mouseup', _ => {
-//   isDown = false;
-//   slider.classList.remove('activite');
-// });
-// slider.addEventListener('mousemove', e => {
-//   if (!isDown) return;
-//   e.preventDefault();
-//   const x = e.pageX - slider.offsetLeft;
-//   const SCROLL_SPEED = 3;
-//   const walk = (x - startX) * SCROLL_SPEED;
-//   slider.scrollLeft = scrollLeft - walk;
-// });
+slider.addEventListener('mousedown', e => {
+  isDown = true;
+  slider.classList.add('activite');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', _ => {
+  isDown = false;
+  slider.classList.remove('activite');
+});
+slider.addEventListener('mouseup', _ => {
+  isDown = false;
+  slider.classList.remove('activite');
+});
+slider.addEventListener('mousemove', e => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const SCROLL_SPEED = 3;
+  const walk = (x - startX) * SCROLL_SPEED;
+  slider.scrollLeft = scrollLeft - walk;
+});
 
 // ---- CAROUSEL3 ----
-// const gap = 50;
-// const carousel = document.getElementById("slider-carousel"),
-//   content = document.getElementById("slider-content"),
-//   next = document.getElementById("next"),
-//   prev = document.getElementById("prev");
+const gap = 50;
+const carousel = document.getElementById("slider-carousel"),
+  content = document.getElementById("slider-content"),
+  next = document.getElementById("next"),
+  prev = document.getElementById("prev");
 
-// next.addEventListener("click", e => {
-//   carousel.scrollBy(width + gap, 0);
-//   if (carousel.scrollWidth !== 0) {
-//     prev.style.display = "flex";
-//   }
-//   if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
-//     next.style.display = "none";
-//   }
-// });
-// prev.addEventListener("click", e => {
-//   carousel.scrollBy(-(width + gap), 0);
-//   if (carousel.scrollLeft - width - gap <= 0) {
-//     prev.style.display = "none";
-//   }
-//   if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
-//     next.style.display = "flex";
-//   }
-// });
+next.addEventListener("click", e => {
+  carousel.scrollBy(width + gap, 0);
+  if (carousel.scrollWidth !== 0) {
+    prev.style.display = "flex";
+  }
+  if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+    next.style.display = "none";
+  }
+});
+prev.addEventListener("click", e => {
+  carousel.scrollBy(-(width + gap), 0);
+  if (carousel.scrollLeft - width - gap <= 0) {
+    prev.style.display = "none";
+  }
+  if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+    next.style.display = "flex";
+  }
+});
 
-// let width = carousel.offsetWidth;
-// window.addEventListener("resize", e => (width = carousel.offsetWidth));
+let width = carousel.offsetWidth;
+window.addEventListener("resize", e => (width = carousel.offsetWidth));
+
 
     
