@@ -2315,7 +2315,7 @@
   
 /*      
   .slideOne {
-      /* % ye çevirince responsivesi bozuluyor px bırakınca responsivesi bozulmuyor */
+     
       width: 80px;
       height: 26px;
       background:var(--neosblue);
