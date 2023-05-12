@@ -7,7 +7,7 @@ const navbar = document.querySelector('.navbar-logo')
 const menuBtn = document.querySelector('.collapse')
 
 if(navbar){
-    let media = navbar.offsetWidth + collapseItem.offsetWidth + 100
+    let media = navbar.offsetWidth + collapseItem.offsetWidth + 200
     if(media < 475){
         media = 475
     }
