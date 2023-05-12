@@ -276,11 +276,11 @@
 
     <!-- CHECKBOX DENEMELERİ -->
   <div class="item">
-    <div class="toggle-pill-bw">
-      <input type="checkbox" id="pill2" name="check">
-      <label for="pill2"></label>
+      <div class="toggle-pill-bw">
+        <input type="checkbox" id="pill2" name="check">
+        <label class="checkbox-text" for="pill2"></label>
+      </div>
     </div>
-  </div>
   
   
     <!-- BORDER KALINLIK ÖZELLİKLERİ -->
@@ -293,12 +293,12 @@
 
  <!-- CHECKBOX 2 -->
 
-  <section title=".slideOne">
-    <div class="slideOne">  
-      <input type="checkbox" value="None" id="slideThree" name="check" checked />
-      <label for="slideThree"></label>
-    </div>
-  </section>
+<section title=".slideOne">
+  <div class="slideOne">  
+    <input type="checkbox" value="None" id="slideThree" name="check" checked />
+    <label class="text-checkbox" for="slideThree"></label>
+  </div>
+</section>
 
  
 <!-- CHECKBOX 3 -->
@@ -309,30 +309,26 @@
  <!-- CHECKBOX 4 -->
 
     <div class="switch">
-      <input id="one" class="input" type="checkbox" />
+      <input id="one" class="switcher" type="checkbox" />
       <label for="one" class="sliderer"></label>
     </div>
 
     <!-- --- radio --- -->
     
-    <div class="container">
-        <div class="radio">
-          <input id="radio-1" name="radio" type="radio" checked>
-          <label for="radio-1" class="radio-label">Checked</label>
-        </div>
-      
-        <div class="radio">
-          <input id="radio-2" name="radio" type="radio">
-          <label  for="radio-2" class="radio-label">Unchecked</label>
-        </div>
-      
-        <div class="radio">
-          <input id="radio-3" name="radio" type="radio" disabled>
-          <label for="radio-3" class="radio-label">Disabled</label>
-        </div>
-      </div>
-    
-    
+  <div class="radio">
+      <input id="radio-1" name="radio" type="radio" checked>
+      <label for="radio-1" class="radio-label">Checked</label>
+    </div>
+  
+    <div class="radio">
+      <input id="radio-2" name="radio" type="radio">
+      <label  for="radio-2" class="radio-label">Unchecked</label>
+    </div>
+  
+    <div class="radio">
+      <input id="radio-3" name="radio" type="radio" disabled>
+      <label for="radio-3" class="radio-label">Disabled</label>
+    </div>
     
     
     
@@ -390,19 +386,19 @@
                  <!-- --- SLİDER --- -->
 
    <section class="slider-cont">
-    <div class="slider-wrapper">
-        <div class="slider">
-            <img id="slide-1" src="indir.jpg" alt="">
-            <img id="slide-2" src="indir1.jpg" alt="">
-            <img id="slide-3" src="indir2.jpg" alt="">
-        </div>
-        <div class="slider-nav">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-        </div>
-    </div>
-</section>
+      <div class="slider-wrapper">
+          <div class="slider">
+              <img id="slide-1" src="indir.jpg" alt="">
+              <img id="slide-2" src="indir1.jpg" alt="">
+              <img id="slide-3" src="indir2.jpg" alt="">
+          </div>
+          <div class="slider-nav">
+              <a class="dot" href="#slide-1"></a>
+              <a class="dot" href="#slide-2"></a>
+              <a class="dot" href="#slide-3"></a>
+          </div>
+      </div>
+  </section>
               
 <!-- --- CAROUSEL --- -->
 
@@ -410,47 +406,46 @@
   <div class="carousel-wrapper">
     <div class="inner">
       <div class="carousel-item">
-        <img src="indir.jpg">
+        <img class="carousel-img" src="indir.jpg">
       </div>
       <div class="carousel-item">
-        <img src="indir1.jpg">
+        <img class="carousel-img" src="indir1.jpg">
       </div>
       <div class="carousel-item">
-        <img src="indir2.jpg">
+        <img class="carousel-img" src="indir2.jpg">
       </div>
       <div class="carousel-item">
-        <img src="indir.jpg">
+        <img class="carousel-img" src="indir.jpg">
       </div>
       <div class="carousel-item">
-        <img src="indir1.jpg">
+        <img class="carousel-img" src="indir1.jpg">
       </div>
       <div class="carousel-item">
-        <img src="indir2.jpg">
+        <img class="carousel-img" src="indir2.jpg">
       </div>
     </div>
   </div>
 </div>
   
   <div class="map">
-    <button class="caros firstes"></button>
-    <button class="second"></button>
-    <button class="third"></button>
+    <button id="button" class=" caros firstes"></button>
+    <button id="button" class=" second"></button>
+    <button id="button" class=" third"></button>
   </div>
 </div>
                 
 <!-- ---- CAROUSEL2 ---- -->
 <ul class="gallery">
-	<li class="scroll-1"></li>
-  <li class="scroll-2"></li>
-  <li class="scroll-3"></li>
-  <li class="scroll-4"></li>
-  <li class="scroll-5"></li>
-  <li class="scroll-6"></li>
-  <li class="scroll-7"></li>
-  <li class="scroll-8"></li>
-  <li class="scroll-9"></li>
+	<li id="scroll" class="scroll-1"></li>
+  <li id="scroll" class="scroll-2"></li>
+  <li id="scroll" class="scroll-3"></li>
+  <li id="scroll" class="scroll-4"></li>
+  <li id="scroll" class="scroll-5"></li>
+  <li id="scroll" class="scroll-6"></li>
+  <li id="scroll" class="scroll-7"></li>
+  <li id="scroll" class="scroll-8"></li>
+  <li id="scroll" class="scroll-9"></li>
 </ul>
-
 
 <!-- ---- CAROUSEL3 ---- -->
 
@@ -475,14 +470,13 @@
 	
 	<!-- ---- radio 2 ---- -->
 
-
-<div>
-  <div class="box">
-    <input id="two" type="checkbox">
-    <span class="check"></span>
-    <label for="two">Hey! Check me.</label>
+  <div>
+    <div class="box">
+      <input id="two" type="checkbox">
+      <span class="check"></span>
+      <label class="box-label" for="two">Hey! Check me.</label>
+    </div>
   </div>
-</div>
 
 <script src="script.js" >
  
