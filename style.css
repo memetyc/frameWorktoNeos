@@ -927,6 +927,7 @@
   .bg-green{background: var(--green) !important;}
   .bg-softorange{background: var(--softorange) !important;}
   .bg-yellow{background: var(--yellow) !important;}
+  .bg-neos-neon{background: var(--neos-neon) !important;}
   .bg-lin-gray{background: var(--lin-gray) !important;}
   .bg-lin-neosblue{background:var(--lin-neosblue) !important;}
   .bg-lin-hot{background: var(--lin-hot) !important;}
@@ -940,6 +941,7 @@
   .text-green{color:var(--green) !important;}
   .text-softgreen{color:var(--softorange) !important;}
   .text-yellow{color: var(--yellow) !important;}
+  .text-neos-neon{color: var(--neos-neon) !important;}
   
   
   /* button color and button özellikleri */
