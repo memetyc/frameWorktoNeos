@@ -2037,7 +2037,7 @@
           align-items: stretch;
           width: 100%;
         }
-        .select-group select {
+        .select-group .select-item {
           flex: 1;
           display: block;
           padding: 0.6rem 1.2rem;
@@ -2052,22 +2052,9 @@
           transition: border-color 0.90s ease-in-out, box-shadow 0.90s ease-in-out;
           appearance: none;
         }
-        .select-group select:focus {
+        .select-group .select-item:focus {
           outline-color: var(--neosblue);
         }
-        .select-group button {
-          align-self: center;
-          padding: 0.6rem 1.2rem;
-          margin-bottom: 0;
-          font-size: 1.6rem;
-          font-weight: 200;
-          line-height: 1.5;
-          color: var(--gray);
-          text-align: center;
-          white-space: nowrap;
-          background-color: var(--white);
-          border: 0.1rem solid var(--gray);
-        } 
       /* DİSPLAY ÖZELLİKLERİ */
   .d-flex{
       display: flex;
