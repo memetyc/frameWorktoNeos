@@ -2540,7 +2540,9 @@
         opacity: 0.5;
     }
   
-  
+   #slide-1,#slide-2,#slide-3{
+      background: var(--gray);
+    }
      /* --- CAROUSEL --- */
   
      .carousel-center {
@@ -2603,7 +2605,10 @@
       width: 0.5rem;
     }
 
-
+ .carousel-img {
+      height: 12.5rem;;
+      background: var(--gray);
+    }
       /* ---- CAROUSEL2 ---- */
 
 
