@@ -9,6 +9,9 @@
   }
   html{
       font-size: 62.5%;
+	  height:100%;
+
+
   }
   
   /* Font-size kısmımızı her kodumuz için 10px olarak ayarlamıştık.Aşağıdaki kısımda ise her etiket için gerekli px özelliklerini belirlenmiştir. */
