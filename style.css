@@ -919,6 +919,7 @@
         
   }
   /* background-colors */
+  .bg-neos-neon{background: var(--neos-neon) !important;}
   .bg-white{background: var(--white) !important;}
   .bg-black{background: var(--black) !important;}
   .bg-neosblue{background:var(--neosblue) !important;}
@@ -932,6 +933,7 @@
   .bg-lin-hot{background: var(--lin-hot) !important;}
   
   /* text colors */
+  .text-neos-neon{ color: var(--neos-neon) !important;}
   .text-white{ color: var(--white) !important;}
   .text-black{ color: var(--black) !important;}
   .text-neosblue{ color: var(--neosblue) !important;}
