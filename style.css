@@ -1682,7 +1682,7 @@
   }
   .navbar-expend .navbar-items{
       display:  flex;
-      gap: 1rem;
+      gap: 3rem;
   }  
   .navbar-dark{
       background-color: var(--black);
