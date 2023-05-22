@@ -2426,9 +2426,9 @@
     content: 'OFF';
     color: var(--black);
     position: absolute;
-    top: 0.5rem;
+    top: 0.4rem;
     right: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     z-index: 0;
     font-weight: bold;
     text-shadow: 1px 1px 0px rgba(255,255,255,.15);
