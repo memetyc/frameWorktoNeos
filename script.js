@@ -201,6 +201,19 @@ selectGroup.forEach(group => {
     _slayt[slaytNo].style.display="block";
 
 }
+// Login içi script
+function togglePasswordVisibility() {
+  var passwordInput = document.querySelector('input[name="password"]');
+  var icon = document.getElementById("password-icon");
+  
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    icon.innerHTML = "&#128275;";
+  } else {
+    passwordInput.type = "password";
+    icon.innerHTML = "🔒";
+  }
+}
 
 
 
