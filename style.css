@@ -1097,6 +1097,7 @@
       border: solid var(--neosblue) 0.1rem;
       text-transform: uppercase;
       transform: skew(-21deg);
+      min-width: 100px;
   }
   .btn.btn-white::before{
       content: '';
@@ -1135,6 +1136,7 @@
         line-height: 2.9rem;
         padding: 0.1rem 0.5rem;
         border: none;
+      min-width: 100px;
     }
   .btn.btn-gray:after{
       position: absolute;
